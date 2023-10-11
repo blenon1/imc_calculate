@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="calcul de l'IMC pour garder un oeil sur son poids">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=East+Sea+Dokdo&family=Handjet&family=Lato&family=Monoton&family=Montserrat:ital,wght@0,200;1,300;1,700&family=Oswald:wght@300&family=Roboto:ital,wght@0,100;0,900;1,400;1,700&family=Rubik+Wet+Paint&family=Tilt+Prism&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=East+Sea+Dokdo&family=Handjet&family=Lato&family=Monoton&family=Montserrat:ital,wght@0,200;1,300;1,700&family=Oswald:wght@300&family=Raleway:ital,wght@0,500;1,400&family=Roboto:ital,wght@0,100;0,900;1,400;1,700&family=Rubik+Wet+Paint&family=Tilt+Prism&display=swap"
+         rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calcul d'IMC</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul <span>d'IMC</span></h1>
+
+        <form>
+            <div class="inputs-container">
+                <div class="input-group">
+                    <label for="height">Votre taille en centimetre</label>
+                    <input type="number" placeholder="Veuillez saisir votre taille" id="height" class="height-input">
+        
+                    <label for="weight">Votre poids en Kg</label>
+                    <input type="number" placeholder="Veuillez saisir votre poids" id="weight" class="weight-input">
+                </div>
+            </div>
+            <button type="submit" id="send">Afficher votre IMC</button>
+        </form>
+        <div class="info">
+            <p class="bmi-value">0</p>
+            <p class="result">En attente de votre resultat</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
